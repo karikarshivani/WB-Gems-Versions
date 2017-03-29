@@ -16,6 +16,14 @@
 		BA06AD041E843059006B5AB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA06AD021E843059006B5AB8 /* LaunchScreen.storyboard */; };
 		BA06AD0F1E843059006B5AB8 /* WBGemsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06AD0E1E843059006B5AB8 /* WBGemsTests.m */; };
 		BA06AD1A1E84305A006B5AB8 /* WBGemsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA06AD191E84305A006B5AB8 /* WBGemsUITests.m */; };
+		BA2EDF9A1E8C10C700D47134 /* GalleryCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BA2EDF991E8C10C700D47134 /* GalleryCollectionViewCell.m */; };
+		BA4DAFD81E8B32F300EB33CD /* ProductTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4DAFD71E8B32F300EB33CD /* ProductTableViewController.m */; };
+		BA4DAFDB1E8B333900EB33CD /* GalleryCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4DAFDA1E8B333900EB33CD /* GalleryCollectionViewController.m */; };
+		BA4DAFDE1E8B337A00EB33CD /* AboutUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4DAFDD1E8B337A00EB33CD /* AboutUsViewController.m */; };
+		BA4DAFE11E8B338800EB33CD /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4DAFE01E8B338800EB33CD /* ContactUsViewController.m */; };
+		BA4DAFE41E8BCC0800EB33CD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4DAFE31E8BCC0800EB33CD /* MapKit.framework */; };
+		BA4DAFE61E8BCED400EB33CD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4DAFE51E8BCED400EB33CD /* CoreLocation.framework */; };
+		BA4DAFE91E8BDE3600EB33CD /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4DAFE81E8BDE3600EB33CD /* MapAnnotation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,20 @@
 		BA06AD151E843059006B5AB8 /* WBGemsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBGemsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA06AD191E84305A006B5AB8 /* WBGemsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBGemsUITests.m; sourceTree = "<group>"; };
 		BA06AD1B1E84305A006B5AB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA2EDF981E8C10C700D47134 /* GalleryCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryCollectionViewCell.h; sourceTree = "<group>"; };
+		BA2EDF991E8C10C700D47134 /* GalleryCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryCollectionViewCell.m; sourceTree = "<group>"; };
+		BA4DAFD61E8B32F300EB33CD /* ProductTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductTableViewController.h; sourceTree = "<group>"; };
+		BA4DAFD71E8B32F300EB33CD /* ProductTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductTableViewController.m; sourceTree = "<group>"; };
+		BA4DAFD91E8B333900EB33CD /* GalleryCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GalleryCollectionViewController.h; sourceTree = "<group>"; };
+		BA4DAFDA1E8B333900EB33CD /* GalleryCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GalleryCollectionViewController.m; sourceTree = "<group>"; };
+		BA4DAFDC1E8B337A00EB33CD /* AboutUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutUsViewController.h; sourceTree = "<group>"; };
+		BA4DAFDD1E8B337A00EB33CD /* AboutUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutUsViewController.m; sourceTree = "<group>"; };
+		BA4DAFDF1E8B338800EB33CD /* ContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactUsViewController.h; sourceTree = "<group>"; };
+		BA4DAFE01E8B338800EB33CD /* ContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
+		BA4DAFE31E8BCC0800EB33CD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BA4DAFE51E8BCED400EB33CD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BA4DAFE71E8BDE3600EB33CD /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
+		BA4DAFE81E8BDE3600EB33CD /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA4DAFE61E8BCED400EB33CD /* CoreLocation.framework in Frameworks */,
+				BA4DAFE41E8BCC0800EB33CD /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +111,7 @@
 				BA06AD0D1E843059006B5AB8 /* WBGemsTests */,
 				BA06AD181E84305A006B5AB8 /* WBGemsUITests */,
 				BA06ACEF1E843059006B5AB8 /* Products */,
+				BA4DAFE21E8BCC0800EB33CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +133,18 @@
 				BA06ACF71E843059006B5AB8 /* ViewController.h */,
 				BA06ACF81E843059006B5AB8 /* ViewController.m */,
 				BA06ACFA1E843059006B5AB8 /* Main.storyboard */,
+				BA2EDF981E8C10C700D47134 /* GalleryCollectionViewCell.h */,
+				BA2EDF991E8C10C700D47134 /* GalleryCollectionViewCell.m */,
+				BA4DAFDC1E8B337A00EB33CD /* AboutUsViewController.h */,
+				BA4DAFDD1E8B337A00EB33CD /* AboutUsViewController.m */,
+				BA4DAFDF1E8B338800EB33CD /* ContactUsViewController.h */,
+				BA4DAFE01E8B338800EB33CD /* ContactUsViewController.m */,
+				BA4DAFE71E8BDE3600EB33CD /* MapAnnotation.h */,
+				BA4DAFE81E8BDE3600EB33CD /* MapAnnotation.m */,
+				BA4DAFD91E8B333900EB33CD /* GalleryCollectionViewController.h */,
+				BA4DAFDA1E8B333900EB33CD /* GalleryCollectionViewController.m */,
+				BA4DAFD61E8B32F300EB33CD /* ProductTableViewController.h */,
+				BA4DAFD71E8B32F300EB33CD /* ProductTableViewController.m */,
 				BA06AD001E843059006B5AB8 /* Assets.xcassets */,
 				BA06AD021E843059006B5AB8 /* LaunchScreen.storyboard */,
 				BA06AD051E843059006B5AB8 /* Info.plist */,
@@ -141,6 +178,15 @@
 				BA06AD1B1E84305A006B5AB8 /* Info.plist */,
 			);
 			path = WBGemsUITests;
+			sourceTree = "<group>";
+		};
+		BA4DAFE21E8BCC0800EB33CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA4DAFE51E8BCED400EB33CD /* CoreLocation.framework */,
+				BA4DAFE31E8BCC0800EB33CD /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +258,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 8GS9UHF2CM;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					BA06AD091E843059006B5AB8 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -279,10 +330,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA4DAFD81E8B32F300EB33CD /* ProductTableViewController.m in Sources */,
 				BA06ACFF1E843059006B5AB8 /* WBGems.xcdatamodeld in Sources */,
+				BA4DAFE91E8BDE3600EB33CD /* MapAnnotation.m in Sources */,
+				BA4DAFDE1E8B337A00EB33CD /* AboutUsViewController.m in Sources */,
 				BA06ACF91E843059006B5AB8 /* ViewController.m in Sources */,
+				BA2EDF9A1E8C10C700D47134 /* GalleryCollectionViewCell.m in Sources */,
 				BA06ACF61E843059006B5AB8 /* AppDelegate.m in Sources */,
 				BA06ACF31E843059006B5AB8 /* main.m in Sources */,
+				BA4DAFDB1E8B333900EB33CD /* GalleryCollectionViewController.m in Sources */,
+				BA4DAFE11E8B338800EB33CD /* ContactUsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +493,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.remotetiger.WBGems;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -448,6 +506,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.remotetiger.WBGems;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -520,6 +579,7 @@
 				BA06AD201E84305A006B5AB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA06AD211E84305A006B5AB8 /* Build configuration list for PBXNativeTarget "WBGemsTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +588,7 @@
 				BA06AD231E84305A006B5AB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA06AD241E84305A006B5AB8 /* Build configuration list for PBXNativeTarget "WBGemsUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +597,7 @@
 				BA06AD261E84305A006B5AB8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
