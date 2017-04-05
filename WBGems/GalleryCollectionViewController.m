@@ -25,26 +25,28 @@ static NSString * const reuseIdentifier = @"Cell";
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:@"gCell"];
+//    [self.collectionView registerClass:[GalleryCollectionViewCell class] forCellWithReuseIdentifier:@"Cell"]; //CAUSED A BLANK SCREEN
     
     // Do any additional setup after loading the view.
-    galleryArray = [[NSMutableArray alloc] initWithObjects:[UIImage imageNamed:@"GSERR160101"],
-                    [UIImage imageNamed:@"GSERR160102"],
-                    [UIImage imageNamed:@"GSERR160103"],
-                    [UIImage imageNamed:@"GSERR160104"],
-                    [UIImage imageNamed:@"GSERR160105"],
-                    [UIImage imageNamed:@"GSERR160106"],
-                    [UIImage imageNamed:@"GSERR160609"],
-                    [UIImage imageNamed:@"GSNEC160101C"],
-                    [UIImage imageNamed:@"GSNEC160102"],
-                    [UIImage imageNamed:@"GSNES160101"],
-                    [UIImage imageNamed:@"GSNES160102"],
-                    [UIImage imageNamed:@"GSNES160103"],
-                    [UIImage imageNamed:@"GSPNS160101"],
-                    [UIImage imageNamed:@"GSPNS160102"],
-                    [UIImage imageNamed:@"GSRNG160101"],
-                    [UIImage imageNamed:@"GSRNG160102"],
-                    nil];
+    galleryArray = [[NSMutableArray alloc] initWithObjects:
+        [UIImage imageNamed:@"GSERR160101"],
+        [UIImage imageNamed:@"GSERR160102"],
+        [UIImage imageNamed:@"GSERR160103"],
+        [UIImage imageNamed:@"GSERR160104"],
+        [UIImage imageNamed:@"GSERR160105"],
+        [UIImage imageNamed:@"GSERR160106"],
+        [UIImage imageNamed:@"GSERR160609"],
+        [UIImage imageNamed:@"GSNEC160101C"],
+        [UIImage imageNamed:@"GSNEC160102"],
+        [UIImage imageNamed:@"GSNES160101"],
+        [UIImage imageNamed:@"GSNES160102"],
+        [UIImage imageNamed:@"GSNES160103"],
+        [UIImage imageNamed:@"GSPNS160101"],
+        [UIImage imageNamed:@"GSPNS160102"],
+        [UIImage imageNamed:@"GSRNG160101"],
+        [UIImage imageNamed:@"GSRNG160102"],
+        nil];
+    
     
 }
 
@@ -71,11 +73,11 @@ static NSString * const reuseIdentifier = @"Cell";
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return [galleryArray count];
+    return galleryArray.count;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"gCell" forIndexPath:indexPath];
+    GalleryCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
  
 //    UIImage *galleryImage = (UIImage *) [cell viewWithTag:42];
 //    UIImageView *galleryImageView = [[UIImageView alloc] initWithImage:galleryImage];
@@ -84,7 +86,13 @@ static NSString * const reuseIdentifier = @"Cell";
 //    [cell addSubview:galleryImageView];
 //    [cell addSubview:galleryLabel];
     
-    
+//    cell.detailTextLabel.text = [self.productsDateArray objectAtIndex:indexPath.row];
+//    cell.imageView.image = [UIImage imageNamed:@"Gemstone"];
+
+    UIImage *currentImage = [galleryArray objectAtIndex:indexPath.row];
+    cell.galleryImages.image = currentImage;
+    cell.galleryLabels.text = [NSString stringWithFormat:@"%li", indexPath.row+1];
+//    cell.galleryImages.image = [UIImage imageNamed:[galleryArray objectAtIndex:indexPath.row]];
     
     return cell;
 }

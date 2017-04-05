@@ -24,6 +24,7 @@
 		BA4DAFE41E8BCC0800EB33CD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4DAFE31E8BCC0800EB33CD /* MapKit.framework */; };
 		BA4DAFE61E8BCED400EB33CD /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA4DAFE51E8BCED400EB33CD /* CoreLocation.framework */; };
 		BA4DAFE91E8BDE3600EB33CD /* MapAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = BA4DAFE81E8BDE3600EB33CD /* MapAnnotation.m */; };
+		BAD792FA1E8C51C800924EB5 /* ProductDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD792F91E8C51C800924EB5 /* ProductDetailController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		BA4DAFE51E8BCED400EB33CD /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BA4DAFE71E8BDE3600EB33CD /* MapAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapAnnotation.h; sourceTree = "<group>"; };
 		BA4DAFE81E8BDE3600EB33CD /* MapAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapAnnotation.m; sourceTree = "<group>"; };
+		BAD792F81E8C51C800924EB5 /* ProductDetailController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductDetailController.h; sourceTree = "<group>"; };
+		BAD792F91E8C51C800924EB5 /* ProductDetailController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductDetailController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				BA06ACF71E843059006B5AB8 /* ViewController.h */,
 				BA06ACF81E843059006B5AB8 /* ViewController.m */,
 				BA06ACFA1E843059006B5AB8 /* Main.storyboard */,
+				BAD792F81E8C51C800924EB5 /* ProductDetailController.h */,
+				BAD792F91E8C51C800924EB5 /* ProductDetailController.m */,
 				BA2EDF981E8C10C700D47134 /* GalleryCollectionViewCell.h */,
 				BA2EDF991E8C10C700D47134 /* GalleryCollectionViewCell.m */,
 				BA4DAFDC1E8B337A00EB33CD /* AboutUsViewController.h */,
@@ -337,6 +342,7 @@
 				BA06ACF91E843059006B5AB8 /* ViewController.m in Sources */,
 				BA2EDF9A1E8C10C700D47134 /* GalleryCollectionViewCell.m in Sources */,
 				BA06ACF61E843059006B5AB8 /* AppDelegate.m in Sources */,
+				BAD792FA1E8C51C800924EB5 /* ProductDetailController.m in Sources */,
 				BA06ACF31E843059006B5AB8 /* main.m in Sources */,
 				BA4DAFDB1E8B333900EB33CD /* GalleryCollectionViewController.m in Sources */,
 				BA4DAFE11E8B338800EB33CD /* ContactUsViewController.m in Sources */,

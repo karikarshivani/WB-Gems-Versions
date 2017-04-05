@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ProductDetailController.h"
 
 @interface ProductTableViewController : UITableViewController {
     IBOutlet UITableView *productsTableView;
     NSArray *productsAllArray;
-    NSArray *productsTitleArray;
-    NSArray *productsDateArray;
-    
 }
+@property(nonatomic,strong) NSMutableArray *productsTitleArray;
+@property(nonatomic,strong) NSMutableArray *productsDateArray;
+
 
 @end

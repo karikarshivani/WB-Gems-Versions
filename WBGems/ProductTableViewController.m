@@ -7,8 +7,11 @@
 //
 
 #import "ProductTableViewController.h"
+#import "GalleryCollectionViewController.h"
 
-@interface ProductTableViewController ()
+@interface ProductTableViewController () {
+    NSMutableArray *galleryArray;
+}
 
 @end
 
@@ -17,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"Products";
+    self.productsTitleArray = [[NSMutableArray alloc] init];
+    self.productsDateArray = [[NSMutableArray alloc] init];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -30,34 +35,56 @@
                                 NSError *error) {
               
                 NSDictionary *jsonEntireDictionary = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableContainers error:nil];
+                
 //                NSLog(@"%@", jsonEntireDictionary);
                 
-                for (NSDictionary *temp in jsonEntireDictionary) {
-                    productsAllArray = temp[@"posts" ];
-                }
+//                for (NSDictionary *temp in jsonEntireDictionary) {
+//                    productsAllArray = temp[@"posts" ];
+//                }
                 
-                NSLog(@"%@", productsAllArray);
-//                NSDictionary *productDictionary = [jsonEntireDictionary objectForKey:@"posts"];
+//                
+//                NSLog(@"%@", productsAllArray);
+                NSDictionary *productDictionary = [jsonEntireDictionary objectForKey:@"posts"];
 //                NSLog(@"%@", productDictionary);
                 
-            /*    for (NSDictionary *temp in productDictionary) {
-                    productsTitleArray = temp[@"title" ];
-                }
-                NSLog(@"%@", productsTitleArray);
-              
-                for (NSDictionary *temp in productDictionary) {
-                    productsDateArray = temp[@"date" ];
-                }
-                NSLog(@"%@", productsDateArray);
-
+             //   productsTitleArray = [productDictionary objectForKey:@"title"];
                 
-                */
+               for (NSDictionary *temp in productDictionary) {
+                   [self.productsTitleArray addObject:temp[@"title"]];
+               }
+                NSLog(@"Array is %@", self.productsTitleArray);
+             
+                for (NSDictionary *tempb in productDictionary) {
+                    [self.productsDateArray addObject:tempb[@"date"]];
+                }
+                NSLog(@"Dates are %@", self.productsDateArray);
+                
+             
                 
     
                 dispatch_async(dispatch_get_main_queue(), ^{
                      [productsTableView reloadData];
                 });
             }] resume];
+    
+    galleryArray = [[NSMutableArray alloc] initWithObjects:
+                                    [UIImage imageNamed:@"GSERR160101"],
+                                    [UIImage imageNamed:@"GSERR160102"],
+                                    [UIImage imageNamed:@"GSERR160103"],
+                                    [UIImage imageNamed:@"GSERR160104"],
+                                    [UIImage imageNamed:@"GSERR160105"],
+                                    [UIImage imageNamed:@"GSERR160106"],
+                                    [UIImage imageNamed:@"GSERR160609"],
+                                    [UIImage imageNamed:@"GSNEC160101C"],
+                                    [UIImage imageNamed:@"GSNEC160102"],
+                                    [UIImage imageNamed:@"GSNES160101"],
+                                    [UIImage imageNamed:@"GSNES160102"],
+                                    [UIImage imageNamed:@"GSNES160103"],
+                                    [UIImage imageNamed:@"GSPNS160101"],
+                                    [UIImage imageNamed:@"GSPNS160102"],
+                                    [UIImage imageNamed:@"GSRNG160101"],
+                                    [UIImage imageNamed:@"GSRNG160102"],
+                                    nil];
 
 }
 
@@ -73,7 +100,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [productsTitleArray count];
+    return [self.productsTitleArray count];
 }
 
 
@@ -85,8 +112,13 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"pCell"];
     }
     
-    cell.textLabel.text = [productsTitleArray objectAtIndex:indexPath.row];
-    cell.detailTextLabel.text = [productsDateArray objectAtIndex:indexPath.row];
+    cell.textLabel.text = [self.productsTitleArray objectAtIndex:indexPath.row];
+    
+    cell.detailTextLabel.text = [self.productsDateArray objectAtIndex:indexPath.row];
+    cell.imageView.image = [UIImage imageNamed:@"Gemstone"];
+    
+//    UIImage *current = [galleryArray objectAtIndex:indexPath.row];
+    
     
     return cell;
 }
@@ -126,14 +158,19 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
+    ProductDetailController *PDC = [segue destinationViewController];
     // Pass the selected object to the new view controller.
+    NSIndexPath *path = [self.tableView indexPathForSelectedRow];
+    UIImage *current = galleryArray[path.row];
+    [PDC setDetailImage:current];
+    
 }
-*/
+
 
 @end
